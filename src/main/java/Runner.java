@@ -1,15 +1,20 @@
 import db.DBHelper;
+import models.EquipmentType;
 import models.Patron;
+import models.Recipe;
 import models.Review;
 
 public class Runner {
 
     public static void main(String[] args) {
 
-        Patron stoo = new Patron("Stoo", "The best");
-        DBHelper.save(stoo);
-        Review review1 = new Review("The best coffee ever", 4.2);
-        DBHelper.save(review1);
+    Patron stoo = new Patron("Stoo", "The best");
+    DBHelper.save(stoo);
+    Review review1 = new Review("The best coffee ever", 4.2);
+    DBHelper.save(review1);
+    Recipe recipe1 = new Recipe("Scott Rao", EquipmentType.V60,15,94,250,"Sea Salt","3:30","Great success");
+    DBHelper.save(recipe1);
+
 
 
 
