@@ -1,7 +1,12 @@
+import db.DBHelper;
+import models.Patron;
+
 public class Runner {
 
     public static void main(String[] args) {
 
+        Patron stoo = new Patron("Stoo", "The best");
+        DBHelper.save(stoo);
 
 
 
