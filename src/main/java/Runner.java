@@ -10,11 +10,10 @@ public class Runner {
 
     Patron stoo = new Patron("Stoo", "The best");
     DBHelper.save(stoo);
-    Review review1 = new Review("The best coffee ever", 4.2);
-    DBHelper.save(review1);
     Recipe recipe1 = new Recipe("Scott Rao", EquipmentType.V60,15,94,250,"Sea Salt","3:30","Great success");
     DBHelper.save(recipe1);
-
+    Review review1 = new Review("The best coffee ever", 4.2,recipe1);
+    DBHelper.save(review1);
 
 
 

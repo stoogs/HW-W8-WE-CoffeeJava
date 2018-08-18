@@ -8,10 +8,12 @@ public class Review {
     private int id;
     private String review;
     private double beanRating;
+    private Recipe recipe;
 
-    public Review(String review, double beanRating) {
+    public Review(String review, double beanRating, Recipe recipe) {
         this.review = review;
         this.beanRating = beanRating;
+        this.recipe = recipe;
     }
 
     public Review(){} //HB constructor
@@ -25,7 +27,7 @@ public class Review {
     public void setId(int id) {
         this.id = id;
     }
-    @Column(name="review")
+
     public String getReview() {
         return review;
     }
@@ -40,6 +42,15 @@ public class Review {
 
     public void setBeanRating(double beanRating) {
         this.beanRating = beanRating;
+    }
+    @ManyToOne
+    @JoinColumn(name="recipe_id", nullable=false)
+    public Recipe getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(Recipe recipe) {
+        this.recipe = recipe;
     }
 } //end
 

@@ -1,6 +1,8 @@
 package models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="recipes")
@@ -15,6 +17,8 @@ public class Recipe {
     private String brewTime;
     private double ratio;
     private String info;
+    //private Patron patron;
+    private List<Review> reviews;
 
     public Recipe(String name, EquipmentType brewMethod, double grams, int waterTemp, int waterWeight, String grind, String brewTime, String info) {
         this.name = name;
@@ -25,6 +29,8 @@ public class Recipe {
         this.grind = grind;
         this.brewTime = brewTime;
         this.info = info;
+        //this.patron = patron;
+       // this.reviews = new ArrayList<Review>();
     }
 
     public Recipe() {} //HB constructor
@@ -39,6 +45,14 @@ public class Recipe {
     public void setId(int id) {
         this.id = id;
     }
+    @OneToMany(mappedBy="recipe", fetch = FetchType.LAZY)
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
+    }
     @Column(name="name")
     public String getName() {
         return name;
@@ -47,7 +61,7 @@ public class Recipe {
     public void setName(String name) {
         this.name = name;
     }
-    @Column(name="brew_method")
+    @Enumerated(value=EnumType.STRING)
     public EquipmentType getBrewMethod() {
         return brewMethod;
     }
