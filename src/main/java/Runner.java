@@ -1,5 +1,6 @@
 import db.DBHelper;
 import models.Patron;
+import models.Review;
 
 public class Runner {
 
@@ -7,8 +8,8 @@ public class Runner {
 
         Patron stoo = new Patron("Stoo", "The best");
         DBHelper.save(stoo);
-
-
+        Review review1 = new Review("The best coffee ever", 4.2);
+        DBHelper.save(review1);
 
 
 
