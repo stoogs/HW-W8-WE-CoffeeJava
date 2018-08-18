@@ -14,6 +14,8 @@ public class Runner {
     DBHelper.save(recipe1);
     Review review1 = new Review("The best coffee ever", 4.2,recipe1);
     DBHelper.save(review1);
+    Review review2 = new Review("The 2nd best coffee ever", 4.7,recipe1);
+    DBHelper.save(review2);
 
 
 

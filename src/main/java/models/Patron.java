@@ -1,6 +1,8 @@
 package models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "patrons")
@@ -8,6 +10,7 @@ public class Patron {
     private int id;
     private String username;
     private String bio;
+
 
     public Patron(String username, String bio) {
         this.username = username;
@@ -41,5 +44,4 @@ public class Patron {
     public void setBio(String bio) {
         this.bio = bio;
     }
-
 }//end

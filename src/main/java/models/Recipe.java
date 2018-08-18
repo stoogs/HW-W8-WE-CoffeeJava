@@ -17,9 +17,7 @@ public class Recipe {
     private String brewTime;
     private double ratio;
     private String info;
-    //private Patron patron;
-    private List<Review> reviews;
-
+    //TODO ADD PATRON
     public Recipe(String name, EquipmentType brewMethod, double grams, int waterTemp, int waterWeight, String grind, String brewTime, String info) {
         this.name = name;
         this.brewMethod = brewMethod;
@@ -29,8 +27,6 @@ public class Recipe {
         this.grind = grind;
         this.brewTime = brewTime;
         this.info = info;
-        //this.patron = patron;
-       // this.reviews = new ArrayList<Review>();
     }
 
     public Recipe() {} //HB constructor
@@ -45,14 +41,7 @@ public class Recipe {
     public void setId(int id) {
         this.id = id;
     }
-    @OneToMany(mappedBy="recipe", fetch = FetchType.LAZY)
-    public List<Review> getReviews() {
-        return reviews;
-    }
 
-    public void setReviews(List<Review> reviews) {
-        this.reviews = reviews;
-    }
     @Column(name="name")
     public String getName() {
         return name;
@@ -61,6 +50,7 @@ public class Recipe {
     public void setName(String name) {
         this.name = name;
     }
+    //@Column(name="brewmethod")
     @Enumerated(value=EnumType.STRING)
     public EquipmentType getBrewMethod() {
         return brewMethod;
