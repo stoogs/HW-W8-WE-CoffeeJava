@@ -7,16 +7,32 @@ import java.util.List;
 @Entity
 @Table(name="recipes")
 public class Recipe {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private int id;
+    @Column(name="name")
     private String name;
+    @Enumerated(value=EnumType.STRING)
     private EquipmentType brewMethod;
+    @Column(name="grams")
     private double grams;
+    @Column(name="temperature")
     private int waterTemp;
+    @Column(name="water_ml")
     private int waterWeight;
+    @Column(name="grind")
     private String grind;
+    @Column(name="brew_time")
     private String brewTime;
+    @Column(name="ratio")
     private double ratio;
+    @Column(name="info")
     private String info;
+
+    @OneToMany(mappedBy = "recipe")
+//    @JoinColumn(name="recipe_id")
     private List<Review> reviews;
 
     //TODO ADD PATRON
@@ -34,9 +50,9 @@ public class Recipe {
 
     public Recipe() {} //HB constructor
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name="id")
     public int getId() {
         return id;
     }
@@ -45,7 +61,7 @@ public class Recipe {
         this.id = id;
     }
 
-    @Column(name="name")
+//    @Column(name="name")
     public String getName() {
         return name;
     }
@@ -54,7 +70,7 @@ public class Recipe {
         this.name = name;
     }
     //@Column(name="brewmethod")
-    @Enumerated(value=EnumType.STRING)
+//    @Enumerated(value=EnumType.STRING)
     public EquipmentType getBrewMethod() {
         return brewMethod;
     }
@@ -62,7 +78,7 @@ public class Recipe {
     public void setBrewMethod(EquipmentType brewMethod) {
         this.brewMethod = brewMethod;
     }
-    @Column(name="grams")
+//    @Column(name="grams")
     public double getGrams() {
         return grams;
     }
@@ -70,7 +86,7 @@ public class Recipe {
     public void setGrams(double grams) {
         this.grams = grams;
     }
-    @Column(name="temperature")
+//    @Column(name="temperature")
     public int getWaterTemp() {
         return waterTemp;
     }
@@ -78,7 +94,7 @@ public class Recipe {
     public void setWaterTemp(int waterTemp) {
         this.waterTemp = waterTemp;
     }
-    @Column(name="water_ml")
+//    @Column(name="water_ml")
     public int getWaterWeight() {
         return waterWeight;
     }
@@ -86,7 +102,7 @@ public class Recipe {
     public void setWaterWeight(int waterWeight) {
         this.waterWeight = waterWeight;
     }
-    @Column(name="grind")
+//    @Column(name="grind")
     public String getGrind() {
         return grind;
     }
@@ -94,7 +110,7 @@ public class Recipe {
     public void setGrind(String grind) {
         this.grind = grind;
     }
-    @Column(name="brew_time")
+//    @Column(name="brew_time")
     public String getBrewTime() {
         return brewTime;
     }
@@ -102,7 +118,7 @@ public class Recipe {
     public void setBrewTime(String brewTime) {
         this.brewTime = brewTime;
     }
-    @Column(name="ratio")
+//    @Column(name="ratio")
     public double getRatio() {
         return ratio;
     }
@@ -110,7 +126,7 @@ public class Recipe {
     public void setRatio(double ratio) {
         this.ratio = ratio;
     }
-    @Column(name="info")
+//    @Column(name="info")
     public String getInfo() {
         return info;
     }
@@ -118,8 +134,8 @@ public class Recipe {
     public void setInfo(String info) {
         this.info = info;
     }
-    @OneToMany(mappedBy = "recipe")
-//    @JoinColumn(name="recipe_id")
+//    @OneToMany(mappedBy = "recipe")
+////    @JoinColumn(name="recipe_id")
     public List<Review> getReviews() {
         return reviews;
     }

@@ -5,9 +5,15 @@ import javax.persistence.*;
 @Entity
 @Table(name = "reviews")
 public class Review {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private int id;
+    @Column(name="review")
     private String review;
+    @Column(name="bean_rating")
     private double beanRating;
+    @ManyToOne
     private Recipe recipe;
 
     public Review(String review, double beanRating, Recipe recipe) {
@@ -17,9 +23,9 @@ public class Review {
     }
 
     public Review(){} //HB constructor
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name="id")
     public int getId() {
         return id;
     }
@@ -35,7 +41,7 @@ public class Review {
     public void setReview(String review) {
         this.review = review;
     }
-    @Column(name="bean_rating")
+//    @Column(name="bean_rating")
     public double getBeanRating() {
         return beanRating;
     }
@@ -43,7 +49,7 @@ public class Review {
     public void setBeanRating(double beanRating) {
         this.beanRating = beanRating;
     }
-    @ManyToOne
+//    @ManyToOne
     public Recipe getRecipe() {
         return recipe;
     }

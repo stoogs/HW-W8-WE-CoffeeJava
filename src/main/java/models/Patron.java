@@ -7,9 +7,18 @@ import java.util.List;
 @Entity
 @Table(name = "patrons")
 public class Patron {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private int id;
+
+    @Column(name="username")
     private String username;
+
+    @Transient
     private String bio;
+
     //TODO ONE Patron has many recipes and many reviews.
 
     public Patron(String username, String bio) {
@@ -17,10 +26,10 @@ public class Patron {
         this.bio = bio;
     }
     public Patron(){} //Blank HB constructor
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+//
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name="id")
     public int getId() {
         return id;
     }
@@ -28,7 +37,7 @@ public class Patron {
     public void setId(int id) {
         this.id = id;
     }
-    @Column(name="username")
+//    @Column(name="username")
     public String getUsername() {
         return username;
     }
@@ -37,7 +46,7 @@ public class Patron {
         this.username = username;
     }
     //@Column(name="bio")
-    @Transient
+//    @Transient
     public String getBio() {
         return bio;
     }
