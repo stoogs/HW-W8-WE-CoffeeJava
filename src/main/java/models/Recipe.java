@@ -30,10 +30,10 @@ public class Recipe {
     private double ratio;
     @Column(name="info")
     private String info;
-
     @OneToMany(mappedBy = "recipe")
-//    @JoinColumn(name="recipe_id")
+//    @JoinColumn(name="recipe_id") NOT REQUIRED
     private List<Review> reviews;
+
 
     //TODO ADD PATRON
     public Recipe(String name, EquipmentType brewMethod, double grams, int waterTemp, int waterWeight, String grind, String brewTime, String info) {

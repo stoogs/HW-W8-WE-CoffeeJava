@@ -17,11 +17,15 @@ public class Review {
     @ManyToOne
     //@JoinColumn(name="recipe_id") NOT REQUIRED
     private Recipe recipe;
+    @ManyToOne
+    private Patron patron;
 
-    public Review(String review, double beanRating, Recipe recipe) {
+
+    public Review(String review, double beanRating, Recipe recipe, Patron patron) {
         this.review = review;
         this.beanRating = beanRating;
         this.recipe = recipe;
+        this.patron = patron;
     }
 
     public Review(){} //HB constructor
@@ -52,5 +56,6 @@ public class Review {
     public void setRecipe(Recipe recipe) {
         this.recipe = recipe;
     }
+
 } //end
 
