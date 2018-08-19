@@ -34,9 +34,13 @@ public class Recipe {
 //    @JoinColumn(name="recipe_id") NOT REQUIRED
     private List<Review> reviews;
 
-
     //TODO ADD PATRON
-    public Recipe(String name, EquipmentType brewMethod, double grams, int waterTemp, int waterWeight, String grind, String brewTime, String info) {
+    @ManyToOne
+    @JoinColumn(name="patron_id", nullable=false)
+    private Patron patron;
+
+
+    public Recipe(String name, EquipmentType brewMethod, double grams, int waterTemp, int waterWeight, String grind, String brewTime, String info, Patron patron) {
         this.name = name;
         this.brewMethod = brewMethod;
         this.grams = grams;
@@ -46,6 +50,7 @@ public class Recipe {
         this.brewTime = brewTime;
         this.info = info;
         this.reviews = new ArrayList<Review>();
+        this.patron = patron;
     }
 
     public Recipe() {} //HB constructor
@@ -136,4 +141,11 @@ public class Recipe {
         reviews.add(review);
     }
 
+    public Patron getPatron() {
+        return patron;
+    }
+
+    public void setPatron(Patron patron) {
+        this.patron = patron;
+    }
 } //end

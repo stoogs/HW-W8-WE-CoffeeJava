@@ -57,5 +57,14 @@ public class Review {
         this.recipe = recipe;
     }
 
+//TODO this feels wierd
+
+    public Patron getPatron() {
+        return patron;
+    }
+
+    public void setPatron(Patron patron) {
+        this.patron = patron;
+    }
 } //end
 

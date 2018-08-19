@@ -20,11 +20,14 @@ public class Patron {
     private List<Review> reviews;
 
     //TODO ONE Patron has many recipes
+    //@OneToMany(mappedBy="patron")
+    //private List<Recipe> recipes;
 
     public Patron(String username, String bio) {
         this.username = username;
         this.bio = bio;
         this.reviews = new ArrayList<Review>();
+        //this.recipes = new ArrayList<Recipe>();
     }
     public Patron(){} //Blank HB constructor
 

@@ -15,9 +15,9 @@ public class Runner {
     DBHelper.save(stoo);
     Patron joe = new Patron("Joe", "The pressed");
     DBHelper.save(joe);
-    Recipe recipe1 = new Recipe("Scott Rao", EquipmentType.V60,15,94,250,"Sea Salt","3:30","Great success");
+    Recipe recipe1 = new Recipe("Scott Rao", EquipmentType.V60,15,94,250,"Sea Salt","3:30","Great success",stoo);
     DBHelper.save(recipe1);
-    Recipe recipe2 = new Recipe("AP Guy", EquipmentType.AEROPRESS,18,90,200,"Sand","4:30","Aeroight");
+    Recipe recipe2 = new Recipe("AP Guy", EquipmentType.AEROPRESS,18,90,200,"Sand","4:30","Aeroight",joe);
     DBHelper.save(recipe2);
     Review review1 = new Review("The best coffee ever", 4.2,recipe1, stoo);
     DBHelper.save(review1);
