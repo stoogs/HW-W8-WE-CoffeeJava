@@ -12,10 +12,8 @@ public class Patron {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private int id;
-
     @Column(name="username")
     private String username;
-
     @Transient
     private String bio;
 
@@ -26,10 +24,7 @@ public class Patron {
         this.bio = bio;
     }
     public Patron(){} //Blank HB constructor
-//
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name="id")
+
     public int getId() {
         return id;
     }
@@ -37,7 +32,6 @@ public class Patron {
     public void setId(int id) {
         this.id = id;
     }
-//    @Column(name="username")
     public String getUsername() {
         return username;
     }
@@ -45,8 +39,7 @@ public class Patron {
     public void setUsername(String username) {
         this.username = username;
     }
-    //@Column(name="bio")
-//    @Transient
+
     public String getBio() {
         return bio;
     }

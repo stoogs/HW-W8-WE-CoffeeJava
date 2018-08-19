@@ -16,7 +16,9 @@ public class Runner {
     DBHelper.save(review1);
     Review review2 = new Review("The 2nd best coffee ever", 4.7,recipe1);
     DBHelper.save(review2);
-
+    recipe1.addReview(review1);
+    DBHelper.update(review1);
+    DBHelper.update(recipe1);
 
 //        Ship pearl = new Ship("The Black Pearl");
 //        DBHelper.save(pearl);
