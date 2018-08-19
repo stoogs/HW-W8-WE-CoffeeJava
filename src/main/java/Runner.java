@@ -18,9 +18,6 @@ public class Runner {
     DBHelper.save(review2);
 
 
-
-
-
 //        Ship pearl = new Ship("The Black Pearl");
 //        DBHelper.save(pearl);
 //

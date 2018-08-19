@@ -10,7 +10,7 @@ public class Patron {
     private int id;
     private String username;
     private String bio;
-
+    //TODO ONE Patron has many recipes and many reviews.
 
     public Patron(String username, String bio) {
         this.username = username;
