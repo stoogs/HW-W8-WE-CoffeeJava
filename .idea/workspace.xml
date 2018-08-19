@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="181eb1c5-ca31-4df9-8541-eff393a2314d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/DBPatron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Patron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Patron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Review.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,14 +31,14 @@
         <counts>
           <entry key="EquipmentType" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="39" />
+          <entry key="java" value="41" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="39" />
+          <entry key="JAVA" value="41" />
           <entry key="UML" value="1" />
           <entry key="XML" value="4" />
         </counts>
@@ -46,14 +46,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="3288" />
+          <entry key="java" value="3567" />
           <entry key="txt" value="14" />
           <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3288" />
+          <entry key="JAVA" value="3567" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="XML" value="34" />
         </counts>
@@ -67,7 +67,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Recipe.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="673">
+                <state relative-caret-position="3216">
                   <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="136" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -77,10 +77,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/db/DBPatron.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="672">
+                  <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Patron.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1531">
-                  <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+                <state relative-caret-position="398">
+                  <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -95,8 +107,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Review.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="648">
-                  <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+                <state relative-caret-position="456">
+                  <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -104,11 +116,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+                <state relative-caret-position="288">
+                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/db/DBPatron.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="48">
+                  <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -120,8 +141,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,8 +157,9 @@
         <option value="$PROJECT_DIR$/src/main/java/models/EquipmentType.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/models/Recipe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Patron.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Review.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Patron.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/DBPatron.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
       </list>
     </option>
@@ -234,7 +256,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534686428860" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534687404167" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -287,7 +309,7 @@
       <workItem from="1534595889511" duration="11592000" />
       <workItem from="1534609267123" duration="5059000" />
       <workItem from="1534662939575" duration="422000" />
-      <workItem from="1534679272819" duration="5166000" />
+      <workItem from="1534679272819" duration="6324000" />
     </task>
     <task id="LOCAL-00001" summary="Test IJ Commit">
       <created>1534662884035</created>
@@ -300,13 +322,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22239000" />
+    <option name="totallyTimeSpent" value="23397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="22" width="1676" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14215687" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14215687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -316,8 +338,8 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21729958" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39936775" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26687765" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39831403" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -381,18 +403,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test IJ Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Test IJ Commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
@@ -465,20 +475,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Recipe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Patron.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="136" selection-end-column="5" />
+        <state relative-caret-position="398">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Patron.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Recipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1531">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        <state relative-caret-position="3216">
+          <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="136" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -487,15 +497,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Review.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="456">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBPatron.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

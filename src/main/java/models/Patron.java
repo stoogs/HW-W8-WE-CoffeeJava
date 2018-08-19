@@ -16,11 +16,10 @@ public class Patron {
     private String username;
     @Transient
     private String bio;
-    //TODO NEW
     @OneToMany(mappedBy="patron")
     private List<Review> reviews;
 
-    //TODO ONE Patron has many recipes and many reviews.
+    //TODO ONE Patron has many recipes
 
     public Patron(String username, String bio) {
         this.username = username;

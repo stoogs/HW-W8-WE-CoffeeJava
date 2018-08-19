@@ -1,8 +1,11 @@
 import db.DBHelper;
+import db.DBPatron;
 import models.EquipmentType;
 import models.Patron;
 import models.Recipe;
 import models.Review;
+
+import java.util.List;
 
 public class Runner {
 
@@ -14,11 +17,14 @@ public class Runner {
     DBHelper.save(recipe1);
     Review review1 = new Review("The best coffee ever", 4.2,recipe1, stoo);
     DBHelper.save(review1);
-    Review review2 = new Review("The 2nd best coffee ever", 4.7,recipe1,stoo);
+    Review review2 = new Review("The 2nd best coffee ever", 4.7,recipe1, stoo);
     DBHelper.save(review2);
     recipe1.addReview(review1);
     DBHelper.update(review1);
     DBHelper.update(recipe1);
+
+        List<Review> patronsReviews = DBPatron.getReviewsBy(stoo);
+
 
 
 //        Ship pearl = new Ship("The Black Pearl");
