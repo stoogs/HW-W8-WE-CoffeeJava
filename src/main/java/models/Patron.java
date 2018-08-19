@@ -36,7 +36,8 @@ public class Patron {
     public void setUsername(String username) {
         this.username = username;
     }
-    @Column(name="bio")
+    //@Column(name="bio")
+    @Transient
     public String getBio() {
         return bio;
     }

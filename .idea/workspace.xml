@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="181eb1c5-ca31-4df9-8541-eff393a2314d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee Class Diagram.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee Class Diagram.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoffeeJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Patron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Patron.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Patron.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Patron.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/models/Recipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Recipe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/models/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Review.class" afterDir="false" />
     </list>
@@ -35,27 +29,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="2" />
-          <entry key="java" value="26" />
+          <entry key="java" value="28" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="28" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="2566" />
+          <entry key="java" value="2713" />
           <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2566" />
+          <entry key="JAVA" value="2713" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="34" />
         </counts>
@@ -63,17 +57,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.28307465">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/Recipe.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Review.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="145">
-                  <caret line="52" column="2" lean-forward="true" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="259">
+                  <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -95,10 +86,13 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/Review.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Recipe.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="452">
-                  <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+                <state relative-caret-position="614">
+                  <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -126,8 +120,8 @@
         <option value="$PROJECT_DIR$/src/main/java/models/EquipmentType.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/models/Patron.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Review.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Review.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Recipe.java" />
       </list>
     </option>
@@ -145,11 +139,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="183" />
     <option name="y" value="22" />
-    <option name="width" value="1676" />
-    <option name="height" value="1058" />
+    <option name="width" value="1257" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -216,7 +210,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534610392418" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534662054568" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -267,17 +261,18 @@
       <option name="presentableId" value="Default" />
       <updated>1534595885571</updated>
       <workItem from="1534595889511" duration="11592000" />
-      <workItem from="1534609267123" duration="1111000" />
+      <workItem from="1534609267123" duration="4117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12703000" />
+    <option name="totallyTimeSpent" value="15709000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="22" width="1676" height="1058" extended-state="0" />
+    <frame x="46" y="22" width="1394" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17197062" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20784023" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -287,12 +282,12 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30801687" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37581274" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32911393" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
@@ -365,13 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -382,10 +370,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Recipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="52" column="2" lean-forward="true" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="32" />
+        <state relative-caret-position="614">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

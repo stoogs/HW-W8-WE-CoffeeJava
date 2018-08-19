@@ -17,6 +17,8 @@ public class Recipe {
     private String brewTime;
     private double ratio;
     private String info;
+    private List<Review> reviews;
+
     //TODO ADD PATRON
     public Recipe(String name, EquipmentType brewMethod, double grams, int waterTemp, int waterWeight, String grind, String brewTime, String info) {
         this.name = name;
@@ -27,6 +29,7 @@ public class Recipe {
         this.grind = grind;
         this.brewTime = brewTime;
         this.info = info;
+        this.reviews = new ArrayList<Review>();
     }
 
     public Recipe() {} //HB constructor
@@ -115,5 +118,13 @@ public class Recipe {
     public void setInfo(String info) {
         this.info = info;
     }
+    @OneToMany(mappedBy = "recipe")
+//    @JoinColumn(name="recipe_id")
+    public List<Review> getReviews() {
+        return reviews;
+    }
 
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
+    }
 } //end

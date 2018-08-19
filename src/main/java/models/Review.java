@@ -44,7 +44,6 @@ public class Review {
         this.beanRating = beanRating;
     }
     @ManyToOne
-    @JoinColumn(name="recipe_id")
     public Recipe getRecipe() {
         return recipe;
     }
